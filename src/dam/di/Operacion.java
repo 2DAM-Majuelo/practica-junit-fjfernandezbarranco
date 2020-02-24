@@ -67,11 +67,9 @@ public class Operacion {
     /**
      * Crea un objeto diferente con los mismos datos del original
      * @return Una copia de este objeto.
-     * @throws CloneNotSupportedException Cuando no se puede clonar (No hace falta probarlo)
      */
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        super.clone();
+    protected Object clone() {
         return new Operacion(this.opr1, this.opr2, this.tipo_opr);
     }
 
